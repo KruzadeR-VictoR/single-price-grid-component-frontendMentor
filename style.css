@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #e5eff5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-card {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.438);
+          box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.438);
+}
+
+.main-card .description {
+  background-color: white;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 2rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.main-card .description h2 {
+  color: #00b3b3;
+}
+
+.main-card .description .caption {
+  color: #c0df34;
+  padding: 1.5rem 0 1rem;
+  font-weight: 700;
+}
+
+.main-card .description p {
+  color: #98a6bd;
+}
+
+.main-card .subscription {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-card .subscription .sign-up {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: teal;
+  padding: 2rem;
+  border-radius: 0 0 0 10px;
+}
+
+.main-card .subscription .sign-up h3 {
+  color: #e5eff5;
+  font-weight: 400;
+}
+
+.main-card .subscription .sign-up .price_value {
+  color: #98a6bd;
+  padding: 1rem 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-card .subscription .sign-up .price_value span {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+}
+
+.main-card .subscription .sign-up .price_caption {
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 0 2rem;
+}
+
+.main-card .subscription .sign-up button {
+  cursor: pointer;
+  background-color: #c0df34;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: whitesmoke;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.226);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.226);
+}
+
+.main-card .subscription .sign-up button:hover {
+  background-color: whitesmoke;
+  color: #c0df34;
+  border: 1px solid #c0df34;
+}
+
+.main-card .subscription .why_us {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2rem;
+  background-color: #2ab2af;
+  border-radius: 0 0 10px 0;
+}
+
+.main-card .subscription .why_us h3 {
+  color: #e5eff5;
+  padding-bottom: 1rem;
+}
+
+.main-card .subscription .why_us ul {
+  list-style: none;
+}
+
+.main-card .subscription .why_us ul li {
+  padding: 0.1rem 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width: 600px) {
+  .main-card {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .subscription {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sign-up {
+    border-radius: 0 !important;
+  }
+  .why_us {
+    border-radius: 0 0 10px 10px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+//| varibles
+
+$karla: "Karla", sans-serif;
+
+$cyan: hsl(179, 62%, 43%);
+$BrightYellow: hsl(71, 73%, 54%);
+$LightGray: hsl(204, 43%, 93%);
+$GrayishBlue: hsl(218, 22%, 67%);
+//| varibles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $karla;
+}
+
+body {
+  height: 100vh;
+  background-color: $LightGray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-card {
+  border-radius: 10px;
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.438);
+  .description {
+    background-color: white;
+    flex-basis: 50%;
+    padding: 2rem;
+    border-radius: 10px 10px 0 0;
+    h2 {
+      color: hsl(180, 100%, 35%);
+    }
+    .caption {
+      color: $BrightYellow;
+      padding: 1.5rem 0 1rem;
+      font-weight: 700;
+    }
+    p {
+      color: $GrayishBlue;
+    }
+  }
+  .subscription {
+    flex-basis: 50%;
+    display: flex;
+    .sign-up {
+      flex-basis: 50%;
+      background-color: teal;
+      padding: 2rem;
+      border-radius: 0 0 0 10px;
+      h3 {
+        color: $LightGray;
+        font-weight: 400;
+      }
+      .price_value {
+        color: $GrayishBlue;
+        padding: 1rem 0 0.5rem;
+        //| had to put it in a flexbox to get that " per month " vertically center to the price
+        display: flex;
+        align-items: center;
+        span {
+          color: white;
+          font-weight: 700;
+          font-size: 2rem;
+          padding-right: 0.5rem;
+        }
+      }
+      .price_caption {
+        white-space: nowrap;
+        color: hsla(0, 0%, 100%, 0.7);
+        padding: 0 0 2rem;
+      }
+      button {
+        cursor: pointer;
+        background-color: $BrightYellow;
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 1rem;
+        color: whitesmoke;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.226);
+        &:hover {
+          background-color: whitesmoke;
+          color: $BrightYellow;
+          border: 1px solid $BrightYellow;
+        }
+      }
+    }
+    .why_us {
+      flex: 1;
+      padding: 2rem;
+      background-color: $cyan;
+      border-radius: 0 0 10px 0;
+      h3 {
+        color: $LightGray;
+        padding-bottom: 1rem;
+      }
+      ul {
+        //   padding: 1.5rem 0;
+        list-style: none;
+        li {
+          padding: 0.1rem 0;
+          color: hsla(0, 0%, 100%, 0.6);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-card {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .subscription {
+    flex-direction: column;
+  }
+  .sign-up {
+    border-radius: 0 !important;
+  }
+  .why_us {
+    border-radius: 0 0 10px 10px !important;
+  }
+}
