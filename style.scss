@@ -52,9 +52,10 @@ body {
       background-color: teal;
       padding: 2rem;
       border-radius: 0 0 0 10px;
-      h3 {
-        color: $LightGray;
+      h1 {
+        font-size: 1.17em;
         font-weight: 400;
+        color: $LightGray;
       }
       .price_value {
         color: $GrayishBlue;
@@ -97,7 +98,8 @@ body {
       padding: 2rem;
       background-color: $cyan;
       border-radius: 0 0 10px 0;
-      h3 {
+      h1 {
+        font-size: 1.17em;
         color: $LightGray;
         padding-bottom: 1rem;
       }

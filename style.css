@@ -66,9 +66,10 @@ body {
   border-radius: 0 0 0 10px;
 }
 
-.main-card .subscription .sign-up h3 {
-  color: #e5eff5;
+.main-card .subscription .sign-up h1 {
+  font-size: 1.17em;
   font-weight: 400;
+  color: #e5eff5;
 }
 
 .main-card .subscription .sign-up .price_value {
@@ -124,7 +125,8 @@ body {
   border-radius: 0 0 10px 0;
 }
 
-.main-card .subscription .why_us h3 {
+.main-card .subscription .why_us h1 {
+  font-size: 1.17em;
   color: #e5eff5;
   padding-bottom: 1rem;
 }
